@@ -7,6 +7,13 @@
 
 import UIKit
 
-class SecondViewController {
+class SecondViewController: UIViewController {
+    @IBOutlet weak var redSecondTextLabel: UITextField!
+    @IBOutlet weak var greenSecondTextLabel: UITextField!
+    @IBOutlet weak var BlueSecondTextLabel: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }

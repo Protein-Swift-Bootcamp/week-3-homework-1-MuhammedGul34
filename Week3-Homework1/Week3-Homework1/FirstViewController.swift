@@ -11,6 +11,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var redLabelText: UILabel!
     @IBOutlet weak var greenLabelText: UILabel!
     @IBOutlet weak var blueLabelText: UILabel!
+    @IBOutlet weak var titleOfProjectLabel: UILabel!
     
     @IBOutlet weak var redInputTextLabel: UILabel!
     @IBOutlet weak var greenInputTextLabel: UILabel!
@@ -31,6 +32,7 @@ class FirstViewController: UIViewController {
         setupLabel(label: redLabelText)
         setupLabel(label: blueLabelText)
         setupLabel(label: greenLabelText)
+        setupLabel(label: titleOfProjectLabel)
         
         buttonUI(button: assignValueButton)
     }
@@ -46,7 +48,7 @@ class FirstViewController: UIViewController {
     
     fileprivate func setupLabelText(label: UILabel) {
         label.text = "Please enter your value at the second page"
-        label.backgroundColor = .systemGray6
+        label.backgroundColor = .white
         
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
@@ -57,14 +59,11 @@ class FirstViewController: UIViewController {
         button.layer.cornerRadius = 20
         button.titleLabel?.textColor = .black
         button.backgroundColor = .systemGray4
-
-        
     }
     
     @IBAction func segueButtonClicked(_ sender: UIButton) {
-        assignValueButton.layer.masksToBounds = true
-        assignValueButton.layer.cornerRadius = 5
-    
+      
+        performSegue(withIdentifier: "toSecondVC", sender: nil)
     }
     
 }
