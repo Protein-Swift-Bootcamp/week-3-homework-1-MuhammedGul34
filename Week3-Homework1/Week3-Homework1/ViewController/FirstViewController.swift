@@ -9,7 +9,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITextFieldDelegate {
     let secondTexts = SecondViewController()
-
+    let helpers = Helpers()
     let userDefault = UserDefaults.standard
     
     @IBOutlet weak var redLabelText: UILabel!
@@ -24,54 +24,25 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var assignValueButton: UIButton!
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleSendParameters), name: NSNotification.Name("handleSendParametersID"), object: nil)
         
-        creatingNotificationCenter()
+        helpers.setupLabelText(label: redInputTextLabel)
+        helpers.setupLabelText(label: greenInputTextLabel)
+        helpers.setupLabelText(label: blueInputTextLabel)
         
-        setupLabelText(label: redInputTextLabel)
-        setupLabelText(label: greenInputTextLabel)
-        setupLabelText(label: blueInputTextLabel)
+        helpers.setupLabel(label: redLabelText)
+        helpers.setupLabel(label: blueLabelText)
+        helpers.setupLabel(label: greenLabelText)
+        helpers.setupLabel(label: titleOfProjectLabel)
         
-        setupLabel(label: redLabelText)
-        setupLabel(label: blueLabelText)
-        setupLabel(label: greenLabelText)
-        setupLabel(label: titleOfProjectLabel)
-        
-        buttonUI(button: assignValueButton)
+        helpers.buttonUI(button: assignValueButton)
       
     }
-
-    
-    fileprivate func setupLabel(label: UILabel){
-        
-        label.layer.masksToBounds = true
-        label.layer.cornerRadius = 5
-        label.clipsToBounds = true
-        label.textAlignment = .center
-    }
-    
-    fileprivate func setupLabelText(label: UILabel) {
-        label.text = ""
-        label.backgroundColor = .white
-        label.layer.masksToBounds = true
-        label.layer.cornerRadius = 5
-        label.clipsToBounds = true
-    }
-    
-    fileprivate func buttonUI(button: UIButton){
-        button.layer.cornerRadius = 20
-        button.titleLabel?.textColor = .black
-        button.backgroundColor = .systemGray4
-    }
-    
 
     @IBAction func segueButtonClicked(_ sender: UIButton) {
-      
         performSegue(withIdentifier: "toSecondVC", sender: nil)
     }
     
@@ -89,11 +60,5 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             }
          }
     }
-    
-    func creatingNotificationCenter(){
-        
-      
-    }
-    
 }
 

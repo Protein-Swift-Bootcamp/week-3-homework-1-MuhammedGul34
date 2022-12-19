@@ -15,6 +15,7 @@
 		2E5E59BB2950A52A0045840C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E59B92950A52A0045840C /* LaunchScreen.storyboard */; };
 		2E5E59C32950A5670045840C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E59C22950A5670045840C /* SecondViewController.swift */; };
 		2E5E59C62950C25D0045840C /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E59C52950C25D0045840C /* NotificationCenter.swift */; };
+		2E5E59CF29510A9D0045840C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E59CE29510A9D0045840C /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2E5E59BC2950A52A0045840C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E59C22950A5670045840C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2E5E59C52950C25D0045840C /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		2E5E59CE29510A9D0045840C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,12 @@
 		2E5E59AD2950A5290045840C /* Week3-Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				2E5E59D029510DDC0045840C /* Helpers */,
+				2E5E59CD29510A2D0045840C /* SupportingFiles */,
 				2E5E59CC2951091D0045840C /* Model */,
 				2E5E59CB295108FA0045840C /* Views */,
 				2E5E59CA295108D20045840C /* Delegates */,
 				2E5E59C9295108B20045840C /* ViewController */,
-				2E5E59B72950A52A0045840C /* Assets.xcassets */,
-				2E5E59BC2950A52A0045840C /* Info.plist */,
 			);
 			path = "Week3-Homework1";
 			sourceTree = "<group>";
@@ -91,7 +93,6 @@
 		2E5E59CB295108FA0045840C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2E5E59B92950A52A0045840C /* LaunchScreen.storyboard */,
 				2E5E59B42950A5290045840C /* Main.storyboard */,
 			);
 			path = Views;
@@ -103,6 +104,24 @@
 				2E5E59C52950C25D0045840C /* NotificationCenter.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2E5E59CD29510A2D0045840C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E59B92950A52A0045840C /* LaunchScreen.storyboard */,
+				2E5E59B72950A52A0045840C /* Assets.xcassets */,
+				2E5E59BC2950A52A0045840C /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2E5E59D029510DDC0045840C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E59CE29510A9D0045840C /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E59C32950A5670045840C /* SecondViewController.swift in Sources */,
+				2E5E59CF29510A9D0045840C /* Helpers.swift in Sources */,
 				2E5E59B32950A5290045840C /* FirstViewController.swift in Sources */,
 				2E5E59C62950C25D0045840C /* NotificationCenter.swift in Sources */,
 				2E5E59AF2950A5290045840C /* AppDelegate.swift in Sources */,
@@ -329,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34GKX882TW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Week3-Homework1/Info.plist";
+				INFOPLIST_FILE = "Week3-Homework1/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34GKX882TW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Week3-Homework1/Info.plist";
+				INFOPLIST_FILE = "Week3-Homework1/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
