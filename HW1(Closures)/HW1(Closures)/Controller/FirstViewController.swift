@@ -40,8 +40,10 @@ class FirstViewController: UIViewController {
      let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         
-        vc.clousure = { text in
-            self.redLabel.text = text
+        vc.clousure = { RGB in
+            self.redLabel.text = RGB[0]
+            self.greenLabel.text = RGB[1]
+            self.blueLabel.text = RGB[2]
         }
         navigationController?.pushViewController(vc, animated: true)
         

@@ -7,7 +7,7 @@
 
 import UIKit
 
-typealias text = (String) -> ()
+typealias text = ([String]) -> ()
 
 class SecondViewController : UIViewController {
     
@@ -20,7 +20,7 @@ class SecondViewController : UIViewController {
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var redTextFiled: UITextField!
     @IBOutlet weak var greenTextField: UITextField!
-    @IBOutlet weak var blueTextField: UILabel!
+    @IBOutlet weak var blueTextField: UITextField!
     @IBOutlet weak var buttonCompleteUI: UIButton!
     
     
@@ -38,10 +38,13 @@ class SecondViewController : UIViewController {
     }
     
     @IBAction func buttonCompleteClicked(_ sender: UIButton) {
-        guard let text = redTextFiled.text else {return}
-        if let clousure = clousure {
-            clousure(text)
-        }
+        guard let textRed = redTextFiled.text else {return}
+        guard let textGreen = greenTextField.text else {return}
+        guard let textBlue = blueTextField.text else {return}
+        
+        let RGB : [String] = [textRed, textGreen, textBlue]
+                    clousure(RGB)
+        
         navigationController?.popViewController(animated: true)
     }
 }

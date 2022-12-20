@@ -246,12 +246,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="eBd-zF-zwC"/>
                     <connections>
-                        <outlet property="blueTextField" destination="53h-eF-O7V" id="3Uy-KB-6Oa"/>
+                        <outlet property="blueTextField" destination="3eD-nR-iGj" id="p4K-qL-N3Q"/>
                         <outlet property="buttonCompleteUI" destination="pMO-l7-4hM" id="p9r-y1-iNr"/>
                         <outlet property="greenTextField" destination="ha1-AQ-vYC" id="9Lv-ps-MOH"/>
                         <outlet property="label1" destination="EWb-r5-Mbp" id="033-wi-VLe"/>
                         <outlet property="label2" destination="nc4-Ky-ZfY" id="oqX-zc-GJ9"/>
-                        <outlet property="label3" destination="53h-eF-O7V" id="GkO-NE-xd9"/>
+                        <outlet property="label3" destination="53h-eF-O7V" id="iWX-FN-ycq"/>
                         <outlet property="redTextFiled" destination="pQt-nv-Al1" id="0xg-Ey-J6q"/>
                     </connections>
                 </viewController>
