@@ -13,7 +13,7 @@ class SecondViewController : UIViewController {
     
     let setupUI = SetupCustomUILabels()
     
-    var closure : text!
+    var clousure : text!
     
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
@@ -39,7 +39,9 @@ class SecondViewController : UIViewController {
     
     @IBAction func buttonCompleteClicked(_ sender: UIButton) {
         guard let text = redTextFiled.text else {return}
-        closure(text)
-        _ = navigationController?.popViewController(animated: true)
+        if let clousure = clousure {
+            clousure(text)
+        }
+        navigationController?.popViewController(animated: true)
     }
 }

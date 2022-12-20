@@ -3,7 +3,7 @@
 //  HW1(Closures)
 //
 //  Created by Muhammed Gül on 20.12.2022.
-//
+//Thread 1: "Storyboard (<UIStoryboard: 0x6000029a2e20>) doesn't contain a view controller with identifier 'SecondViewController'"
 
 import UIKit
 
