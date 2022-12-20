@@ -139,7 +139,7 @@
                         <outlet property="greenLabel" destination="7BD-fY-E57" id="vKs-9y-oMs"/>
                         <outlet property="redLabel" destination="5tJ-fz-RZh" id="vll-xz-sin"/>
                         <outlet property="titleLbl" destination="uqJ-dw-nGK" id="4Fp-Yq-sBf"/>
-                        <segue destination="aO1-Yv-fwp" kind="show" identifier="toSecondVC" id="K2c-2h-fba"/>
+                        <segue destination="aO1-Yv-fwp" kind="show" identifier="toSecondVC" id="CDo-fc-BOF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

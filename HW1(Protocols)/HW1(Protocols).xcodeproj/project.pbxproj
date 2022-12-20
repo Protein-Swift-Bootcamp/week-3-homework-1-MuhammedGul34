@@ -13,8 +13,8 @@
 		2E5E59E52951984C0045840C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E59E32951984C0045840C /* Main.storyboard */; };
 		2E5E59E72951984C0045840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E59E62951984C0045840C /* Assets.xcassets */; };
 		2E5E59EA2951984C0045840C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E59E82951984C0045840C /* LaunchScreen.storyboard */; };
-		2E5E59F22951988E0045840C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E59F12951988E0045840C /* SecondViewController.swift */; };
 		2E5E59F72951B0530045840C /* SetupCustomUILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E59F62951B0530045840C /* SetupCustomUILabels.swift */; };
+		2E5E59F92951C98E0045840C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E59F82951C98E0045840C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		2E5E59E62951984C0045840C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5E59E92951984C0045840C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E5E59EB2951984C0045840C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E5E59F12951988E0045840C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2E5E59F62951B0530045840C /* SetupCustomUILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCustomUILabels.swift; sourceTree = "<group>"; };
+		2E5E59F82951C98E0045840C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				2E5E59E12951984C0045840C /* ViewController.swift */,
-				2E5E59F12951988E0045840C /* SecondViewController.swift */,
+				2E5E59F82951C98E0045840C /* SecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E59F72951B0530045840C /* SetupCustomUILabels.swift in Sources */,
-				2E5E59F22951988E0045840C /* SecondViewController.swift in Sources */,
 				2E5E59E22951984C0045840C /* ViewController.swift in Sources */,
 				2E5E59DE2951984C0045840C /* AppDelegate.swift in Sources */,
+				2E5E59F92951C98E0045840C /* SecondViewController.swift in Sources */,
 				2E5E59E02951984C0045840C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

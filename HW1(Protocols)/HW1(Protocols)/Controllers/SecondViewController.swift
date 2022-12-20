@@ -7,7 +7,14 @@
 
 import UIKit
 
-class SecondViewController : UIViewController {
+
+protocol DataSentDelegate {
+    func userDidEnterData(data: String)
+}
+
+class SecondViewController: UIViewController {
+
+    var delegate : DataSentDelegate? = nil
     
     let customLabels = SetupCustomUILabels()
     
@@ -34,11 +41,15 @@ class SecondViewController : UIViewController {
         
         customLabels.setupUIView(UIview: buttonUI, 30)
         
-        
     }
-    @IBAction func buttonCompleteAssigning(_ sender: UIButton) {
-        // we need to complet task swiyh protocol
-        _ = navigationController?.popViewController(animated: true)
-    
+
+@IBAction func buttonCompleteAssigning(_ sender: UIButton) {
+    if delegate != nil {
+        if redTextLabel.text != nil {
+            let data = redTextLabel.text
+            delegate?.userDidEnterData(data: data!)
+            }
+        }
+    _ = navigationController?.popViewController(animated: true)
     }
 }

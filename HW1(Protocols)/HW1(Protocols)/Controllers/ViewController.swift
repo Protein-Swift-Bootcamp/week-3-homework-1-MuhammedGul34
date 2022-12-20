@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+
+
+class ViewController: UIViewController,DataSentDelegate {
+  
     let customLabels = SetupCustomUILabels()
     
     @IBOutlet weak var titleLbl: UILabel!
@@ -24,6 +26,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         customLabels.setupUIView(UIview: titleLbl, 20)
         customLabels.setupUIView(UIview: color1Lbl, 10)
         customLabels.setupUIView(UIview: color2Lbl, 10)
@@ -34,12 +39,24 @@ class ViewController: UIViewController {
         customLabels.setupUIView(UIview: blueLabel, 10)
         
         customLabels.setupUIView(UIview: ButtonUI, 30)
-        
+                
     }
 
     @IBAction func buttonToSecondVC(_ sender: Any) {
         performSegue(withIdentifier: "toSecondVC", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondVC" {
+            let SecondVC : SecondViewController = segue.destination as! SecondViewController
+            SecondVC.delegate = self
+        }
+    }
+    
+    func userDidEnterData(data: String) {
+        redLabel.text = data
+    }
+
     
 }
 
