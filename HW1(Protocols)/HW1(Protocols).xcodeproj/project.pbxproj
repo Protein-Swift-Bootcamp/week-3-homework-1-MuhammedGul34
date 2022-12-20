@@ -60,13 +60,11 @@
 		2E5E59DC2951984C0045840C /* HW1(Protocols) */ = {
 			isa = PBXGroup;
 			children = (
+				2E5E5A44295222600045840C /* CustomUILabels */,
 				2E5E59F529519FA70045840C /* StoryBoard */,
 				2E5E59F429519F910045840C /* Delegates */,
 				2E5E59F329519F7F0045840C /* Controllers */,
-				2E5E59E62951984C0045840C /* Assets.xcassets */,
-				2E5E59E82951984C0045840C /* LaunchScreen.storyboard */,
-				2E5E59EB2951984C0045840C /* Info.plist */,
-				2E5E59F62951B0530045840C /* SetupCustomUILabels.swift */,
+				2E5E5A43295222390045840C /* SupportingFiles */,
 			);
 			path = "HW1(Protocols)";
 			sourceTree = "<group>";
@@ -95,6 +93,24 @@
 				2E5E59E32951984C0045840C /* Main.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2E5E5A43295222390045840C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E59E62951984C0045840C /* Assets.xcassets */,
+				2E5E59E82951984C0045840C /* LaunchScreen.storyboard */,
+				2E5E59EB2951984C0045840C /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2E5E5A44295222600045840C /* CustomUILabels */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E59F62951B0530045840C /* SetupCustomUILabels.swift */,
+			);
+			path = CustomUILabels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34GKX882TW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW1(Protocols)/Info.plist";
+				INFOPLIST_FILE = "HW1(Protocols)/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34GKX882TW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW1(Protocols)/Info.plist";
+				INFOPLIST_FILE = "HW1(Protocols)/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
