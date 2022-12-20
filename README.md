@@ -1,9 +1,3 @@
-# Week - 3 : Homework - 1
+# Week - 3 : Homework - 1 Closures
 
-=> İki viewcontroller olan bir uygulama yapıyoruz
-
-=> İlk viewcontroller verileri gösteren ikinci VC verilerin girildiği ekran 
-
-=> ikinci VC den ilk VC’a veriler 3 Farklı yol ile aktarılabilir.
-
-=> protocol, notification center, closure
+=> This is the 3.branch and based on "Closures" to create same App 
