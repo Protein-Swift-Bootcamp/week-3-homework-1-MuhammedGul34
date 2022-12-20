@@ -60,13 +60,11 @@
 		2E5E5A272951E7230045840C /* HW1(Closures) */ = {
 			isa = PBXGroup;
 			children = (
+				2E5E5A462952233A0045840C /* SupportingFiles */,
+				2E5E5A452952231F0045840C /* StoryBoard */,
+				2E5E5A42295221C50045840C /* CustomUI */,
 				2E5E5A3E2951F22F0045840C /* Delegates */,
 				2E5E5A3F2951F23D0045840C /* Controller */,
-				2E5E5A2E2951E7230045840C /* Main.storyboard */,
-				2E5E5A312951E7240045840C /* Assets.xcassets */,
-				2E5E5A332951E7240045840C /* LaunchScreen.storyboard */,
-				2E5E5A362951E7240045840C /* Info.plist */,
-				2E5E5A402951F29A0045840C /* SetUpCustomLabels.swift */,
 			);
 			path = "HW1(Closures)";
 			sourceTree = "<group>";
@@ -87,6 +85,32 @@
 				2E5E5A3C2951E7900045840C /* SecondViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E5E5A42295221C50045840C /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E5A402951F29A0045840C /* SetUpCustomLabels.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		2E5E5A452952231F0045840C /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E5A2E2951E7230045840C /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2E5E5A462952233A0045840C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E5A312951E7240045840C /* Assets.xcassets */,
+				2E5E5A332951E7240045840C /* LaunchScreen.storyboard */,
+				2E5E5A362951E7240045840C /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34GKX882TW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW1(Closures)/Info.plist";
+				INFOPLIST_FILE = "HW1(Closures)/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34GKX882TW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW1(Closures)/Info.plist";
+				INFOPLIST_FILE = "HW1(Closures)/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
