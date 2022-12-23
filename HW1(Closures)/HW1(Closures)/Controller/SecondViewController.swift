@@ -43,7 +43,7 @@ class SecondViewController : UIViewController {
         guard let textBlue = blueTextField.text else {return}
         
         let RGB : [String] = [textRed, textGreen, textBlue]
-                    clousure(RGB)
+        clousure(RGB)
         
         navigationController?.popViewController(animated: true)
     }
